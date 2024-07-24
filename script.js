@@ -1,6 +1,5 @@
-document.getElementById('registrationForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
+const regis= document.getElementById('registrationForm')
+regis.addEventListener('submit', function(event) {
     const username = document.getElementById('username').value;
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
@@ -24,4 +23,5 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     }
 
     alert(`Registration successful!\nUser Name: ${username}\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}`);
+    event.preventDefault();
 });
